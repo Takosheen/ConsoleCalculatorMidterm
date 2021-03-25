@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using CalculatorProject.Interfaces;
 using CalculatorProject.Models;
+using CalculatorProject.EventPublisher;
 
 namespace CalculatorProject
 {
@@ -10,7 +11,7 @@ namespace CalculatorProject
         BulkCalculations _bulkCalculations = new BulkCalculations();
         private Calculation calculation;
         private BulkCalculations bulkCalculations;
-
+        public ConsoleEventPublisher _eventPub = new ConsoleEventPublisher();
         // Calculator Listofvalues = new Calculator();
         private IBulkOperation _calculator { get; set; }
       //  public event EventHandler<GreaterThanTenArgs> OnGreaterThanten;

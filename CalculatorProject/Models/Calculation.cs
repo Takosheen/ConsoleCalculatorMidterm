@@ -18,6 +18,11 @@ namespace CalculatorProject.Models
             B = b;
             Operation = calculation;
         }
+
+        public Calculation()
+        {
+        }
+
         public static Calculation Create(double a, double b, Func<double, double, double> calculation)
         {
             var _calculation = new Calculation(a, b, calculation);
